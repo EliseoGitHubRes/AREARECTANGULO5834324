@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AREARECTANGULO5834324.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="30"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="AREA DE UN RECTANGULO"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="MediumPurple"/>
+            <Image Source="area.png"
+                    HeightRequest="200"
+                   WidthRequest="300"
+                    HorizontalOptions="Center" />
+
+            <Label Text="Ingrese la base del rectangulo"
+                   FontSize="15"/>
+            <Entry x:Name="bas"
+                   Placeholder="Base"
+                   Keyboard="Numeric"/>
+
+            <Label Text="Ingrese la altura del rectangulo"
+                   FontSize="15"/>
+            <Entry  x:Name="altu"
+                   Placeholder="Altura"
+                   Keyboard="Numeric"/>
+
+            <Label x:Name="p"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="MediumPurple"
+                   FontSize="18"
+                   Text="El perímetro es: "/>
+            
+            <Label x:Name="s"
+                   HorizontalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="MediumPurple"
+                   FontSize="18"
+                   Text="La superficie es: "/>
+
+            <Button Text="Calcular"
+                    BackgroundColor="White"
+                    BorderColor="MediumPurple"
+                    BorderWidth="3"
+                    CornerRadius="30"
+                    Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
